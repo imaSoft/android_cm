@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_setting">Gevorderde instellings</string>
+    <string name="vibrate_outgoing">Vibreer op antwoord</string>
+    <string name="vibrate_call_waiting">Vibreer op oproep wag</string>
+    <string name="vibrate_hangup">Vibreer op aflui</string>
+    <string name="vibrate_45">Vibreer elke 45 sekondes</string>
+    <string name="vibrate_45_sum">Vibreer elke 45 sekondes van elke minuut gedurende uitgaande oproepe</string>
+    <string name="show_ssn_label">Kennisgewings</string>
+    <string name="show_ssn_summary">Wys \'n kennisgewing vir oproep hanterings verwande netwerk veranderinge</string>
+    <string name="calllog_after_call">Wys verslag</string>
+    <string name="calllog_after_call_summary">Wys die oproep verslag nadat die oproep beëindig is</string>
+    <string name="national_roaming">Nasionale dataswerwing</string>
+    <string name="national_roaming_summary">Koppel aan data dienste wanneer nasionaal swerf</string>
+    <string name="perm_change_mobile_network">Verander netwerk (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">\'n program met hierdie toestemming kan, te enige tyd, tussen 2G en 3G data verander. 3G is vinniger maar gebruik meer battery en kan duurder wees.</string>
+    <string name="dialer_ui_settings_title">Sleutelbord</string>
+    <string name="dialer_ui_settings_summary">Instellings vir die sleutelbord</string>
+    <string name="flip_action_title">Omdraai aksie</string>
+    <string name="flip_action_dialog_title">Draai toestel om\u2026</string>
+    <string name="flip_action_summary">Die omdraai van die toestel <xliff:g id="action">%s</xliff:g></string>
+    <string name="card_title_dialing_waiting">Skakel (wag \u2026)</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">Voorkeur-modus: LTE / CDMA / EvDo</string>
+    <string name="preferred_network_mode_lte_gsm_summary">Voorkeur-modus: LTE / GSM/WCDMA</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_gsm_wcdma_summary">Voorkeur-modus: LTE / CMDA / EvDo / GSM/WCDMA</string>
+    <string name="preferred_network_mode_lte_wcdma_summary">Voorkeur-modus: LTE / WCDMA</string>
+    <string name="callUnanswered_forwarded">Oproep onbeantwoord en gestuur</string>
+    <string name="mwi_notification_title">Boodskap uitstaande aanwyser</string>
+    <string name="mwi_notification_summary">Wys boodskap uitstaande aanwyser vir stemboodskapdiens kennisgewings</string>
+    <string name="card_title_waiting_call">Gewagte oproep</string>
+    <string name="call_notif_unconditionalCF">Onvoorwaardelike oproep aanstuur is aktief</string>
+    <string name="call_notif_conditionalCF">Voorwaardelike oproep aanstuur is aktief</string>
+    <string name="call_notif_MOcall_forwarding">Uitgaande oproep aangestuur</string>
+    <string name="call_notif_cugcall">Oproep in \'n geslote groep gebruikers</string>
+    <string name="call_notif_outgoing_barred">Uitgaande oproepe verbied</string>
+    <string name="call_notif_incoming_barred">Inkomende oproepe verbied deur eksterne party</string>
+    <string name="call_notif_clir_suppression_rejected">Eie nommer onderdrukking verwerp deur netwerk</string>
+    <string name="call_notif_call_deflected">Oproep gestuur deur eksterne party</string>
+    <string name="call_notif_MTcall_forwarding">Inkomende oproep aangestuur</string>
+    <string name="call_notif_multipartycall">Veelparty-oproep</string>
+    <string name="call_notif_callonhold_released">Eksterne oproep vrygestel</string>
+    <string name="call_notif_forwardcheckreceived">Oproep was aangestuur</string>
+    <string name="call_notif_callconnectingect">Oproep verbind deur \'n uitdruklike oproep oordrag</string>
+    <string name="call_notif_callconnectedect">Oproep verbind deur middel van \'n uitdruklike oproep oordrag</string>
+    <string name="incall_call_type_label_forwarded">Aangestuurde oproep</string>
+    <string name="noise_suppression_title">Geraas onderdrukking</string>
+    <string name="noise_suppression_summary">Aktiveer geraas onderdrukking vir oproepe</string>
+    <string name="rejected_as_missed">Verwerp oproepe as gemisde oproep</string>
+    <string name="rejected_as_missed_sum">Merk verwerpte oproepe as \'gemisde oproepe\' eerder as \'inkomende\' in die oproep lys</string>
+    <string name="blacklist_title">Blokeerlys</string>
+    <string name="enable_blacklist_title">Aktiveer blokeerlys</string>
+    <string name="blacklist_summary_disabled">Gedeaktiveer</string>
+    <string name="blacklist_summary">Inkomende oproepe van telefoonnommers in die blokeerlys sal verwerp word</string>
+    <string name="blacklist_notify">Wys kennisgewing</string>
+    <string name="blacklist_private_numbers_title">Private nommers</string>
+    <string name="blacklist_private_numbers_summary">Verwerp inkomende oproepe van private nommers</string>
+    <string name="blacklist_unknown_numbers_title">Onbekende nommers</string>
+    <string name="blacklist_unknown_numbers_summary">Verwerp inkomende oproepe van nommers wat nie in die kontaklys is nie</string>
+    <string name="blacklist_regex_title">Gebruik wisselkarakters</string>
+    <string name="blacklist_regex_summary">Gebruik . as \'n wisselkarakter en * vir herhaling. Bv 123.* blok nommers wat begin met 123 en .*123.* blok nommers wat 123 in die nommer het</string>
+    <string name="add_blacklist_number">Voeg telefoonnommer by</string>
+    <string name="add_to_blacklist">Voeg tot blokeerlys</string>
+    <string name="add_to_blacklist_message">Toekomstige oproepe van %s sal verwerp word</string>
+    <string name="remove_blacklist_number_title">Verwyder nommer</string>
+    <string name="remove_blacklist_number">Wil jy %s van die blokeerlys verwyder?</string>
+    <string name="blacklist_notification">\'n oproep van %s is verwerp</string>
+    <string name="blacklist_notification_private_number">\'n oproep van \'n private nommer is verwerp</string>
+    <string name="blacklist_notification_list_private">Privaat</string>
+    <string name="blacklist_notification_unknown_number">Onbekende nommer %s is verwerp</string>
+    <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g> oproepe is verwerp</string>
+    <string name="unblock_number">Ontblokkeer</string>
+    <string name="onscreenBlacklistText">Blokeerlys</string>
+    <string name="voice_quality_preferences_title">Stem kwaliteit</string>
+    <string name="voice_quality_summary">Met behulp van profiel: <xliff:g id="value">%s</xliff:g></string>
+    <string name="voice_quality_entry_normal">Normaal</string>
+    <string name="voice_quality_entry_clear">Skoon</string>
+    <string name="voice_quality_entry_crisp">Skerp</string>
+    <string name="voice_quality_entry_bright">Helder</string>
+    <string name="enter_input">USSD boodskap moet tussen <xliff:g id="min_len" >%d</xliff:g> en <xliff:g id="max_len" >%d</xliff:g> karakters wees. Probeer asseblief weer.</string>
+    <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) van <xliff:g id="used">%3$s</xliff:g> maksimum tydperk\nVolgende tydperk begin in <xliff:g id="used">%4$d</xliff:g> dae (<xliff:g id="used">%5$s</xliff:g>)</string>
+    <string name="throttle_time_frame_subtext"><xliff:g id="used">%1$d</xliff:g>\u066A van die siklus het verloop\nVolgende tydperk begin in <xliff:g id="used">%2$d</xliff:g> dae (<xliff:g id="used">%3$s</xliff:g>)</string>
+</resources>

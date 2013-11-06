@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Temas</string>
+    <string name="menu_apply">Pas toe</string>
+    <string name="menu_uninstall">Deïnstalleer</string>
+    <string name="menu_about">Meer oor</string>
+    <string name="theme_current">%s (Huidige)</string>
+    <string name="theme_current_author">Outeur: </string>
+    <string name="theme_current_name">Naam: </string>
+    <string name="theme_current_package">Pakket: </string>
+    <string name="theme_change_dialog_title">Pas toe&#8230;</string>
+    <string name="switching_to_theme">Skakel oor na <xliff:g id="theme">%s</xliff:g>&#8230;</string>
+    <string name="dialog_theme_error_title">Tema fout</string>
+    <string name="dialog_missing_host_density_msg">Hierdie tema mis bates vir jou toestel se skerm resolusie.</string>
+    <string name="dialog_missing_theme_package_scope_msg">Hierdie tema is onbehoorlik saamgestel en kan nie toegepas word nie.</string>
+    <string name="dialog_apply_anyway_btn">Pas in elk geval toe</string>
+    <string name="dialog_bummer_btn">Kanselleer</string>
+</resources>

@@ -1595,6 +1595,12 @@ public final class Settings {
         @Deprecated
         public static final String WIFI_STATIC_DNS2 = "wifi_static_dns2";
 
+         /**
+         * The hdmi lcd timeout seconds.
+ 	 *@hide
+         */
+        public static final String HDMI_LCD_TIMEOUT = "hdmi_lcd_timeout";
+
         /**
          * Allows automatic retrieval of mms contents
          * <p>Type: INT</p>

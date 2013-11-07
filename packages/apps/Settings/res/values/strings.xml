@@ -14,6 +14,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hdmi_lcd_timeout">Screen Timeout</string>
+    <string name="hdmi_plugin">HDMI connect</string>
+    <string name="hdmi_extract">HDMI disconnect</string>
+
     <!-- Strings for Dialog yes button -->
     <string name="yes">"Yes"</string>
 
@@ -4259,6 +4263,22 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!--hdmi-->
+    <string name="hdmi_settings">Hdmi</string>
+    <string name="HDCP_Setting_title">HDCP</string>
+    <string name="hdmi_screen_zoom">Screen Zoom</string>
+ 
+    <string name="hdmi_notice">Please connect the HDMI cable</string>
+    <string name="display_notice">Please make sure the HDMI is closed</string>
+    <string name="hdmi_resolution_title">HDMI Resolution</string>
+    <string name="hdmi_resolution_summary_on">select different resolution for hdmi</string>
+    <string name="hdmi_resolution_off">select different resolution for hdmi	</string>
+    <string name="hdmi_mode_title">HDMI Mode</string>
+    <string name="hdmi_mode_summary_on">select different working mode for hdmi</string>
+    <string name="hdmi_mode_off">select different working mode for hdmi	</string>
+    <string name="hdmi_title">Turn on HDMI</string>
+    <string name="HDMI_TV_Display">Adjust the display resolution of the screen</string>
 
     <!-- User settings -->
     <skip/>

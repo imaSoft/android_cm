@@ -48,6 +48,7 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
@@ -69,6 +70,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.io.File;
 
 /**
  * Top-level settings activity to handle single pane and double pane UI layout.
@@ -431,6 +433,16 @@ public class Settings extends PreferenceActivity
 
         updateHeaderList(headers);
     }
+    
+    private boolean hasHdmiFeature(){
+    	File file30=new File("/sys/class/display/HDMI/enable");
+    	File file29=new File("/sys/class/hdmi/hdmi-0/enable");
+    	if(file30.exists()||file29.exists()){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
 
     private void updateHeaderList(List<Header> target) {
         final boolean showDev = mDevelopmentPreferences.getBoolean(
@@ -493,6 +505,10 @@ public class Settings extends PreferenceActivity
                         || Utils.isMonkeyRunning()) {
                     target.remove(i);
                 }
+            } else if(id == R.id.hdmi_settings){
+            	if(!hasHdmiFeature()){
+            		target.remove(header);
+            	}
             } else if (id == R.id.development_settings
                     || id == R.id.performance_settings) {
                 if (!showDev) {

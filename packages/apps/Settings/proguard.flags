@@ -11,6 +11,9 @@
 -keep class com.android.settings.MasterClearConfirm
 -keep class com.android.settings.accounts.*
 -keep class com.android.settings.fuelgauge.*
+-keep class com.android.settings.HdmiControllerActivity
+-keep class com.android.settings.HdmiReceiver
+-keep class com.android.settings.HdmiScreenZoomPreference
 -keep class com.android.settings.users.*
 -keep class com.koushikdutta.**
 -keep class com.android.settings.cyanogenmod.superuser.**

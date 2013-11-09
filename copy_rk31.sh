@@ -12,7 +12,7 @@ mkfs.ext3 out/system.img
 mkdir -p /tmp/system
 sudo mount out/system.img /tmp/system
 sudo rm -r /tmp/system/*
-sudo cp -r --preserve out/target/product/rk30board/system/* /tmp/system
+sudo cp -r --preserve out/target/product/rk31board/system/* /tmp/system
 sudo rm /tmp/system/app/CMAccount.apk
 sudo chown root:root -R /tmp/system
 sudo chmod 06755 /tmp/system/xbin/su
@@ -23,12 +23,12 @@ rm -r /tmp/system
 # make boot.img and copy to the same direktory as system.img
 
 rm out/boot.img
-pushd out/target/product/rk30board/root/
+pushd out/target/product/rk31board/root/
 chmod g-w -R *
 find . | cpio -o -H newc | gzip -n > ../../../../boot.gz
 popd
 
-cd out/target/product/rk30board/rktools
+cd out/target/product/rk31board/rktools
 ./rkcrc -k ../../../../boot.gz ../../../../boot.img
 
 rm ../../../../boot.gz

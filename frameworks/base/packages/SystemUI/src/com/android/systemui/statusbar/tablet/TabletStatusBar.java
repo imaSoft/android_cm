@@ -41,6 +41,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.storage.StorageManager;
 import android.provider.Settings;
 import android.media.AudioManager;
 import android.text.TextUtils;
@@ -399,9 +400,13 @@ public class TabletStatusBar extends BaseStatusBar implements
         return Math.max(res.getDimensionPixelSize(R.dimen.notification_panel_min_height), size.y);
     }
 
+    private StorageManager mStorageManager;
     @Override
     public void start() {
         super.start(); // will add the main bar view
+        mStorageManager = (StorageManager) mContext.getSystemService(Context.STORAGE_SERVICE);
+        mStorageManager.registerListener(
+                new com.android.systemui.usb.StorageNotification(mContext));
     }
 
     private static void copyNotifications(ArrayList<Pair<IBinder, StatusBarNotification>> dest,

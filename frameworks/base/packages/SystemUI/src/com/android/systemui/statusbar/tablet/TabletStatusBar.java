@@ -42,6 +42,7 @@ import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
+import android.media.AudioManager;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.util.Slog;
@@ -139,6 +140,8 @@ public class TabletStatusBar extends BaseStatusBar implements
     View mHomeButton;
     View mMenuButton;
     View mRecentButton;
+    View mVolumeUpButton;
+    View mVolumeDownButton;
     private boolean mAltBackButtonEnabledForIme;
 
     ViewGroup mFeedbackIconArea; // notification icons, IME icon, compat icon
@@ -576,6 +579,10 @@ public class TabletStatusBar extends BaseStatusBar implements
         mHomeButton = mNavigationArea.findViewById(R.id.home);
         mMenuButton = mNavigationArea.findViewById(R.id.menu);
         mRecentButton = mNavigationArea.findViewById(R.id.recent_apps);
+        mVolumeUpButton = mNavigationArea.findViewById(R.id.volume_up);
+        mVolumeUpButton.setOnClickListener(mOnClickListener);
+        mVolumeDownButton = mNavigationArea.findViewById(R.id.volume_down);
+        mVolumeDownButton.setOnClickListener(mOnClickListener);
         mRecentButton.setOnClickListener(mOnClickListener);
 
         LayoutTransition lt = new LayoutTransition();
@@ -1301,6 +1308,18 @@ public class TabletStatusBar extends BaseStatusBar implements
                 onClickInputMethodSwitchButton();
             } else if (v == mCompatModeButton) {
                 onClickCompatModeButton();
+            } else if (v == mVolumeUpButton) {
+                AudioManager audioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+                audioManager.adjustSuggestedStreamVolume(
+                    AudioManager.ADJUST_RAISE,
+                    AudioManager.STREAM_MUSIC,
+                    AudioManager.FLAG_SHOW_UI | AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);
+            } else if (v == mVolumeDownButton) {
+                AudioManager audioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+                audioManager.adjustSuggestedStreamVolume(
+                    AudioManager.ADJUST_LOWER,
+                    AudioManager.STREAM_MUSIC,
+                    AudioManager.FLAG_SHOW_UI | AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);
             }
         }
     };

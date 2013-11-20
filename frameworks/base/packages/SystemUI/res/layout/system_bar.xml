@@ -85,6 +85,20 @@
                     android:contentDescription="@string/accessibility_menu"
                     systemui:glowBackground="@drawable/ic_sysbar_highlight"
                     />
+                <com.android.systemui.statusbar.policy.KeyButtonView android:id="@+id/volume_down"
+                    android:layout_width="@dimen/navigation_key_width"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_volumeminus"
+                    android:contentDescription="@string/accessibility_recent"
+                    systemui:glowBackground="@drawable/ic_sysbar_highlight"
+                    />
+                <com.android.systemui.statusbar.policy.KeyButtonView android:id="@+id/volume_up"
+                    android:layout_width="@dimen/navigation_key_width"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_volumeplus"
+                    android:contentDescription="@string/accessibility_recent"
+                    systemui:glowBackground="@drawable/ic_sysbar_highlight"
+                    />
             </LinearLayout>
 
             <!-- fake space bar zone -->

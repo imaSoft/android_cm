@@ -17,9 +17,13 @@
 //#ifndef _ROOT_PATH
 #define _ROOT_PATH 
 //#endif
-
+#if 1
+#define _PATH_UPAPFILE 	 _ROOT_PATH "/data/misc/ppp/pap-secrets"
+#define _PATH_CHAPFILE 	 _ROOT_PATH "/data/misc/ppp/chap-secrets"
+#else
 #define _PATH_UPAPFILE 	 _ROOT_PATH "/etc/ppp/pap-secrets"
 #define _PATH_CHAPFILE 	 _ROOT_PATH "/etc/ppp/chap-secrets"
+#endif
 #define _PATH_SRPFILE 	 _ROOT_PATH "/etc/ppp/srp-secrets"
 #define _PATH_SYSOPTIONS _ROOT_PATH "/etc/ppp/options"
 #define _PATH_IPUP	 _ROOT_PATH "/etc/ppp/ip-up"
@@ -29,7 +33,11 @@
 #define _PATH_TTYOPT	 _ROOT_PATH "/etc/ppp/options."
 #define _PATH_CONNERRS	 _ROOT_PATH "/etc/ppp/connect-errors"
 #define _PATH_PEERFILES	 _ROOT_PATH "/etc/ppp/peers/"
+#if 1
+#define _PATH_RESOLV	 _ROOT_PATH "/data/misc/ppp/resolv.conf"
+#else
 #define _PATH_RESOLV	 _ROOT_PATH "/etc/ppp/resolv.conf"
+#endif
 
 #define _PATH_USEROPT	 ".ppprc"
 #define	_PATH_PSEUDONYM	 ".ppp_pseudonym"

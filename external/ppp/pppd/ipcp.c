@@ -1996,7 +1996,7 @@ static void
 create_resolv(peerdns1, peerdns2)
     u_int32_t peerdns1, peerdns2;
 {
-#ifndef ANDROID_CHANGES
+//#ifndef ANDROID_CHANGES
     FILE *f;
 
     f = fopen(_PATH_RESOLV, "w");
@@ -2015,7 +2015,7 @@ create_resolv(peerdns1, peerdns2)
 	error("Write failed to %s: %m", _PATH_RESOLV);
 
     fclose(f);
-#endif
+//#endif
 }
 
 /*
